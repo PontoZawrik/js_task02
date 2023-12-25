@@ -76,3 +76,44 @@
 //     result = 'Не високосный год'
 // }
 // alert(result)
+
+
+// 5. Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.
+//
+// const number = prompt('Введите число: ')
+//
+// console.log(number.split(''))
+//
+// const result = number === number.spli.reverse().join('') 
+//     ? 'Палиндром' : 'Не палиндром';
+//
+// alert(result)
+
+
+// 6. Написать конвертор валют. Пользователь вводит количество USD, выбирает, 
+// в какую валюту хочет перевести: EUR, UAH или AZN, и получает в ответ соответствующую сумму.
+//
+// const USD = Number(prompt('Введите сумму (USD): '))
+// const temp = Number(prompt('1 - EUR;  2 - UAH;  3 - AZN'))
+//
+// const EUR = 0.99
+// const UAH = 40.94
+// const AZN = 1.85
+//
+// let result
+// if (temp === 1) {
+//     result = USD * EUR
+// }
+// else if (temp === 2) {
+//     result = USD * UAH
+// }
+// else if (temp === 3) {
+//     result = USD * AZN
+// }
+// else {
+//     result = 'Error'
+// }
+//
+// alert(result)
+
+
