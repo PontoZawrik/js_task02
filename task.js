@@ -82,9 +82,7 @@
 //
 // const number = prompt('Введите число: ')
 //
-// console.log(number.split(''))
-//
-// const result = number === number.spli.reverse().join('') 
+// const result = number === number.split('').reverse().join('') 
 //     ? 'Палиндром' : 'Не палиндром';
 //
 // alert(result)
@@ -161,3 +159,85 @@
 // }
 //
 // alert(result)
+
+
+// 9. Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. 
+// За каждый правильный ответ начисляется 2балла. После вопросов выведите 
+// пользователю количествонабранных баллов.
+//
+// alert('Правильный ответ: 1')
+// const answer1 = Number(prompt('1 - правильный;  2 - не правильный;  3 - не правильный;'))
+// alert('Правильный ответ: 3')
+// const answer2 = Number(prompt('1 - не правильный;  2 - не правильный;  3 - правильный;'))
+// alert('Правильный ответ: 2')
+// const answer3 = Number(prompt('1 - не правильный;  2 - правильный;  3 - не правильный;'))
+//
+// let result = 0
+// result += answer1 === 1 ? 2 : 0
+// result += answer2 === 3 ? 2 : 0
+// result += answer3 === 2 ? 2 : 0
+//
+// alert(`Вы набрали ${result} баллов`)
+
+
+// 10. Запросить дату (день, месяц, год) и вывести следующую
+// за ней дату. Учтите возможность перехода на следующий
+// месяц, год, а также високосный год. 
+//
+// let number = prompt('Введите дату (день месяц год): ').split(' ')
+//
+// let day = Number(number[0])
+// let month = Number(number[1])
+// let year = Number(number[2])
+//
+// if (day > 0 && day <= 31 && month > 0 && month <= 12 && year > 0) {
+//     let leap_year = false
+//     if (year % 400 === 0 || year % 4 === 0 & year % 100 != 0) {
+//         leap_year = true
+//     }
+//    
+//     if (day === 28 && month === 2 && !leap_year) {
+//         day = 1
+//         month++
+//     }
+//     else if (day === 29 && month === 2 && leap_year) {
+//         day = 1
+//         month++
+//     }
+//     else if ((day > 28 && !leap_year) || (day > 29 && leap_year) && month === 2) {
+//         alert('Error')
+//     }
+//     else {
+//         if (day === 30) {
+//             switch (month) {
+//                 case 4: day = 1; month++; break
+//                 case 6: day = 1; month++; break
+//                 case 9: day = 1; month++; break
+//                 case 11: day = 1; month++; break
+//                 default: day++
+//             }
+//         }
+//         else {
+//             if (day === 31 && month === 12) {
+//                 day = 1
+//                 month = 1
+//                 year++
+//             }
+//             else if (day === 31) {
+//                 day = 1
+//                 month++
+//             }
+//             else {
+//                 day++
+//             }
+//         }
+//     }
+// }
+// else {
+//     alert('Error')
+// }
+//
+// day = day < 10 ? `0${day}` : day
+// month = month < 10 ? `0${month}` : month
+//
+// alert(`${day}/${month}/${year}`)
